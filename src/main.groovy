@@ -27,3 +27,11 @@ checkout([$class: 'GitSCM',
         userRemoteConfigs: [[credentialsId: credentials,
                              name: 'origin', refspec: '+refs/pull-requests/*:refs/remotes/origin/pr/*',
                              url: repository]]])
+
+
+sh("git config user.email my.email@google.com")
+sh("git config user.name my-user-name")
+sh("git tag ${BUILD_NUMBER}")
+sh("git push origin --tags")
+
+fatal: could not read Username for 'http://my-git-repo.com:8000': No such device or address
