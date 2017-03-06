@@ -35,3 +35,23 @@ sh("git tag ${BUILD_NUMBER}")
 sh("git push origin --tags")
 
 fatal: could not read Username for 'http://my-git-repo.com:8000': No such device or address
+
+
+
+I have a Jenkins script with this call:
+
+    mvn "-e -X release:prepare"
+
+This fails because git is not found: `/bin/sh: git: command not found`(it is calling git internally).
+
+In the script, I am calling git like this: `sh("{env.git} status")`, which works.
+
+Because of that, I am trying to pass the git environment variable to Maven:
+
+    mvn "-Dgit=${env.git} -e -X release:prepare"
+
+However, this again fails with `/bin/sh: git: command not found`.
+
+So it looks like the address of Git hasn't been properly sent to Maven. Any idea why?
+
+Pass Git location as a parameter to Maven
