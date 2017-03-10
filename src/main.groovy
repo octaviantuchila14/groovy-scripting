@@ -55,3 +55,18 @@ However, this again fails with `/bin/sh: git: command not found`.
 So it looks like the address of Git hasn't been properly sent to Maven. Any idea why?
 
 Pass Git location as a parameter to Maven
+
+
+  <scm>
+    <url>http://my-repo.com:7990/projects/repos/my-project</url>
+    <connection>scm:git:ssh://git@my-repo.com:7999/wrap/my-project.git</connection>
+    <developerConnection>scm:git:ssh://git@my-repo.com:7999/wrap/my-project.git</developerConnection>
+    <tag>job-management-1.1</tag>
+  </scm>
+
+
+        <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+        </plugin>
