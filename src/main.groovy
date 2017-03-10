@@ -85,3 +85,19 @@ Pass Git location as a parameter to Maven
         
                         mvn release:prepare
 
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.5.3</version>
+            <configuration>
+              <tagNameFormat>${env.BUILD_NUMBER}</tagNameFormat>
+            </configuration>
+          </plugin>
+
+mvn release:prepare -tag=${env.BUILD_NUMBER}
+
+Unable to tag SCM
+[ERROR] Provider message:
+[ERROR] The git-tag command failed.
+[ERROR] Command output:
+[ERROR] fatal: tag 'my-project-1.3' already exists
