@@ -70,3 +70,18 @@ Pass Git location as a parameter to Maven
                 <artifactId>maven-release-plugin</artifactId>
                 <version>2.5.3</version>
         </plugin>
+
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.3:prepare (default-cli) on project my-project: Unable to tag SCM
+[ERROR] Provider message:
+[ERROR] The git-push command failed.
+[ERROR] Command output:
+[ERROR] Permission denied (publickey).
+[ERROR] fatal: Could not read from remote repository.
+[ERROR] 
+[ERROR] Please make sure you have the correct access rights
+[ERROR] and the repository exists.
+        
+        
+                        mvn release:prepare
+
