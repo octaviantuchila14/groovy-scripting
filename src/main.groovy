@@ -72,7 +72,7 @@ Pass Git location as a parameter to Maven
         </plugin>
 
 
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.5.3:prepare (default-cli) on project my-project: Unable to tag SCM
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project my-project: Unable to tag SCM
 [ERROR] Provider message:
 [ERROR] The git-push command failed.
 [ERROR] Command output:
@@ -81,6 +81,14 @@ Pass Git location as a parameter to Maven
 [ERROR] 
 [ERROR] Please make sure you have the correct access rights
 [ERROR] and the repository exists.
+        
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project my-project: Unable to tag SCM
+[ERROR] Provider message:
+[ERROR] The git-tag command failed.
+[ERROR] Command output:
+[ERROR] fatal: tag 'my-project-1.4-SNAPSHOT' already exists
+[ERROR] -> [Help 1]
+
         
         
                         mvn release:prepare
