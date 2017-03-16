@@ -109,3 +109,96 @@ Unable to tag SCM
 [ERROR] The git-tag command failed.
 [ERROR] Command output:
 [ERROR] fatal: tag 'my-project-1.3' already exists
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project job-management: Unable to tag SCM
+[ERROR] Provider message:
+[ERROR] The git-push command failed.
+[ERROR] Command output:
+[ERROR] Permission denied (publickey).
+[ERROR] fatal: Could not read from remote repository.
+[ERROR]
+[ERROR] Please make sure you have the correct access rights
+[ERROR] and the repository exists.
+[ERROR] -> [Help 1]
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project job-management: Unable to tag SCM
+Provider message:
+The git-push command failed.
+Command output:
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:212)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:153)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:145)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:116)
+        at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:80)
+        at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:51)
+        at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:307)
+        at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:193)
+        at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:106)
+        at org.apache.maven.cli.MavenCli.execute(MavenCli.java:863)
+        at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+        at org.apache.maven.cli.MavenCli.main(MavenCli.java:199)
+        at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+        at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+        at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+        at java.lang.reflect.Method.invoke(Method.java:498)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+        at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: org.apache.maven.plugin.MojoFailureException: Unable to tag SCM
+Provider message:
+The git-push command failed.
+Command output:
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+        at org.apache.maven.plugins.release.PrepareReleaseMojo.prepareRelease(PrepareReleaseMojo.java:299)
+        at org.apache.maven.plugins.release.PrepareReleaseMojo.execute(PrepareReleaseMojo.java:247)
+        at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:134)
+        at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:207)
+        ... 20 more
+Caused by: org.apache.maven.shared.release.scm.ReleaseScmCommandException: Unable to tag SCM
+Provider message:
+The git-push command failed.
+Command output:
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+        at org.apache.maven.shared.release.phase.ScmTagPhase.execute(ScmTagPhase.java:136)
+        at org.apache.maven.shared.release.DefaultReleaseManager.prepare(DefaultReleaseManager.java:234)
+        at org.apache.maven.shared.release.DefaultReleaseManager.prepare(DefaultReleaseManager.java:169)
+        at org.apache.maven.shared.release.DefaultReleaseManager.prepare(DefaultReleaseManager.java:146)
+        at org.apache.maven.shared.release.DefaultReleaseManager.prepare(DefaultReleaseManager.java:107)
+        at org.apache.maven.plugins.release.PrepareReleaseMojo.prepareRelease(PrepareReleaseMojo.java:291)
+        ... 23 more
+
