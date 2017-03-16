@@ -1,3 +1,46 @@
+Cloning a git repo using SSH
+
+I am trying to clone a git repository using SSH. Therefore, I created an ssh key pair on my local machine and I added the public key on my git repo(which is Bitbucket server).
+
+Then, as I saw here, I tried cloning like this:
+https://kuttler.eu/en/post/git-clone-ssh-could-not-resolve-hostname/
+        
+git clone ssh://my_username@my-repository.com:7999/my_project.git
+
+git clone ssh://git@my-repository.com:7999/my_project.git
+
+These options didn't work however:
+
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+        
+
+
+The only bit of progress I has was by trying this:
+        
+        
+git clone my_username@my-repository.com:7990/wrap/my_project.git
+
+This asked for my password 3 times and then failed. I suspect that this doesn't use SSH though, 
+        because I think SSH should not ask for a password.
+
+Password:
+Password:
+Password:
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,keyboard-interactive).
+fatal: Could not read from remote repository.
+        
+        
+        So how can I clone a git repo using SSH?
+
+
+
+
+        
+        
 http://jenkins-ci.361315.n4.nabble.com/Build-fauiler-while-plublishing-the-plugin-td4849155.html
 
 @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' )
