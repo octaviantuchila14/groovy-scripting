@@ -123,12 +123,17 @@ Unable to tag SCM
 
 
 
+  <scm>
+    <connection>scm:git:ssh://myrepository.com:7999/my_project.git</connection>
+    <developerConnection>scm:git:ssh://git@code.myrepository.com:7999/my_project.git</developerConnection>
+    <tag>HEAD</tag>
+  </scm>
 
 
 
 
 
-[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project job-management: Unable to tag SCM
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project my_project: Unable to tag SCM
 [ERROR] Provider message:
 [ERROR] The git-push command failed.
 [ERROR] Command output:
@@ -138,7 +143,7 @@ Unable to tag SCM
 [ERROR] Please make sure you have the correct access rights
 [ERROR] and the repository exists.
 [ERROR] -> [Help 1]
-org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project job-management: Unable to tag SCM
+org.apache.maven.lifecycle.LifecycleExecutionException: Failed to execute goal org.apache.maven.plugins:maven-release-plugin:2.3.2:prepare (default-cli) on project my_project: Unable to tag SCM
 Provider message:
 The git-push command failed.
 Command output:
