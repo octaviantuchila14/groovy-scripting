@@ -1,3 +1,5 @@
+http://jenkins-ci.361315.n4.nabble.com/Build-fauiler-while-plublishing-the-plugin-td4849155.html
+
 @Grab(group='org.codehaus.groovy.modules.http-builder', module='http-builder', version='0.7' )
 import groovyx.net.http.RESTClient
 import groovy.json.JsonSlurper
