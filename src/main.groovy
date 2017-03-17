@@ -1,3 +1,15 @@
+Password:
+Password:
+Password:
+Permission denied (publickey,gssapi-keyex,gssapi-with-mic,keyboard-interactive).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
+
+
 <scm>
     <connection>scm:git:ssh://git@my-repo.com:7999/my-project.git</connection>
     <developerConnection>scm:git:ssh://git@my-repo.com:7999/wrap/my-project.git</developerConnection>
