@@ -1,3 +1,11 @@
+<scm>
+    <connection>scm:git:ssh://git@my-repo.com:7999/my-project.git</connection>
+    <developerConnection>scm:git:ssh://git@my-repo.com:7999/wrap/my-project.git</developerConnection>
+    <tag>HEAD</tag>
+</scm>
+
+
+
 Cloning a git repo using SSH
 
 I am trying to clone a git repository using SSH. Therefore, I created an ssh key pair on my local machine and I added the public key on my git repo(which is Bitbucket server).
