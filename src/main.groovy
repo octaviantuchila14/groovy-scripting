@@ -2,7 +2,7 @@ ssh -p 7999 -i /c/Users/my-username/.ssh/id_rsa git@my-repo.com whoami
 
 my-username
 
-ssh -T git@code.bankofamerica.com
+ssh -T git@my-repo.com
 
 This is a private computer system with access restricted to
 those with proper authorization.  If you are not specifically
