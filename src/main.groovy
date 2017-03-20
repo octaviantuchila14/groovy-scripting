@@ -1,3 +1,12 @@
+git pull
+Repository not found
+The requested repository does not exist, or you do not have permission to access it.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+
 ssh -Tv git@my-repo.com
 OpenSSH_7.1p2, OpenSSL 1.0.2h  3 May 2016
 debug1: Reading configuration data /h//.ssh/config
