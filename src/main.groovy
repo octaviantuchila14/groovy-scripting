@@ -1,3 +1,15 @@
+ssh -Tv git@my-repo.com
+OpenSSH_7.1p2, OpenSSL 1.0.2h  3 May 2016
+debug1: Reading configuration data /h//.ssh/config
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: Connecting to my-repo.com port 22.
+debug1: Connection established.
+debug1: identity file /h/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+
+
+
+
 ssh -p 7999 -i /c/Users/my-username/.ssh/id_rsa git@my-repo.com whoami
 
 my-username
