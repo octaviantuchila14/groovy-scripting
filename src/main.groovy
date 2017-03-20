@@ -8,6 +8,14 @@ debug1: identity file /h/.ssh/id_rsa type 1
 debug1: key_load_public: No such file or directory
 
 
+Host my-repo-name
+        User my-user
+        Hostname my-repo.com
+        Port 7999
+        IdentityFile id_rsa
+
+
+
 
 
 ssh -p 7999 -i /c/Users/my-username/.ssh/id_rsa git@my-repo.com whoami
