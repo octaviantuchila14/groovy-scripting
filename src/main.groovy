@@ -1,3 +1,23 @@
+Authenticated to my-repo.com ([some-ip]:7999).
+debug1: channel 0: new [client-session]
+debug3: ssh_session2_open: channel_new: 0
+debug2: channel 0: send open
+debug1: Entering interactive session.
+debug2: callback start
+debug2: fd 3 setting TCP_NODELAY
+debug3: ssh_packet_set_tos: set IP_TOS 0x10
+debug2: client_session2_setup: id 0
+debug2: channel 0: request pty-req confirm 1
+debug2: channel 0: request shell confirm 1
+debug2: callback done
+debug2: channel 0: open confirm rwindow 2097512 rmax 32678
+debug2: channel_input_status_confirm: type 99 id 0
+debug2: PTY allocation request accepted on channel 0
+debug2: channel_input_status_confirm: type 100 id 0
+shell request failed on channel 0
+
+
+
 git pull
 Repository not found
 The requested repository does not exist, or you do not have permission to access it.
