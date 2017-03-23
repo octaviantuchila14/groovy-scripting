@@ -1,3 +1,18 @@
+git config --get-regexp 'remote\\.origin\\..*'
+
+remote.origin.url https://user:password@my-repo:7990
+remote.origin.url http://my-repo.com:7990/scm/my-project.git
+        
+git remote set-url --delete origin https://user:password@my-repo:7990
+        
+fatal: could not unset 'remote.origin.url'
+
+
+
+
+
+
+
 git remote set-url --delete origin ^https://.*$
         
         WorkflowScript: 94: illegal string body character after dollar sign;
