@@ -1,4 +1,8 @@
-
+git remote set-url --delete origin ^https://.*$
+        
+        WorkflowScript: 94: illegal string body character after dollar sign;
+   solution: either escape a literal dollar sign "\$5" or bracket the value expression "${5}" @ line 94, column 43.
+           echo ${env.BRANCH_NAME}
 
 
 remote.origin.url https://user:password@my-repo:7990
