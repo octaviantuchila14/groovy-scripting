@@ -1,3 +1,17 @@
+git remote set-url origin ssh://git@my-repo.com:7999/my-project.git
+
+        
+origin  ssh://git@my-repo.com:7999/my-project.git (fetch)
+origin  ssh://git@my-repo.com:7999/my-project.git (push)
+        
+
+origin	https://user:password@my-repo.com:7990 (fetch)
+origin	https://user:password@my-repo.com:7990 (push)
+origin	ssh://git@my-repo.com:7999/my-project.git (push)
+        
+
+
+
 Authenticated to my-repo.com ([some-ip]:7999).
 debug1: channel 0: new [client-session]
 debug3: ssh_session2_open: channel_new: 0
