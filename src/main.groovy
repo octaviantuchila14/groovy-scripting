@@ -1,3 +1,15 @@
+
+
+
+remote.origin.url https://user:password@my-repo:7990
+remote.origin.url http://my-repo.com:7990/scm/my-project.git
+        
+        
+remote.origin.url https://user:password@my-repo:7990
+remote.origin.url ssh://git@my-repo.com:7999/my-project.git
+
+
+
 git remote set-url origin ssh://git@my-repo.com:7999/my-project.git
 
         
@@ -9,8 +21,6 @@ origin	https://user:password@my-repo.com:7990 (fetch)
 origin	https://user:password@my-repo.com:7990 (push)
 origin	ssh://git@my-repo.com:7999/my-project.git (push)
         
-
-
 
 Authenticated to my-repo.com ([some-ip]:7999).
 debug1: channel 0: new [client-session]
