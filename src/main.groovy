@@ -1,3 +1,9 @@
+echo ${env.BUILD_NUMBER}
+echo ${env.BRANCH_NAME}
+
+[INFO] [ERROR] Failed to execute goal org.apache.maven.plugins:maven-deploy-plugin:2.7:deploy (default-deploy) on project my-project: Deployment failed: repository element was not specified in the POM inside distributionManagement element or in -DaltDeploymentRepository=id::layout::url parameter -> [Help 1]
+
+
 git config --get-regexp 'remote\\.origin\\..*'
 
 remote.origin.url https://user:password@my-repo:7990
